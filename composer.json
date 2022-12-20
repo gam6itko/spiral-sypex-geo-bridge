@@ -1,0 +1,38 @@
+{
+    "name": "gam6itko/spiral-sypex-geo-bridge",
+    "description": "sypex-geo bridge for spiral framework",
+    "keywords": [
+        "spiral",
+        "sypex",
+        "geoip"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gam6itko\\Spiral\\SypexGeo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "gam6itko",
+            "email": "gam6itko@gmail.com",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "sypex/geo": "^0.1"
+    },
+    "require-dev": {
+        "nyholm/psr7": "^1.5",
+        "spiral/framework": "^3.0"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "spiral/composer-publish-plugin": true
+        }
+    },
+    "prefer-stable": true
+}
