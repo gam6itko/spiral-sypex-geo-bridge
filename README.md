@@ -1,6 +1,7 @@
 # sypex-geo-spiral-bridge
 
-sypex-geo bridge for Spiral framework
+sypex-geo bridge for Spiral framework.
+Provides DI \Sypex\Geo singleton
 
 ```shell
 composer require gam6itko/spiral-sypex-geo-bridge
