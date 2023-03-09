@@ -17,3 +17,17 @@ return [
     'mode' => \Sypex\Mode::MEMORY
 ];
 ```
+
+## Commands turn on
+
+```php
+// tokenizer.php
+
+return [
+    'debug' => env('DEBUG'),
+    'directories' => [
+        // ...
+        "$vendor/gam6itko/spiral-sypex-geo-bridge/src",
+    ]
+];
+```
