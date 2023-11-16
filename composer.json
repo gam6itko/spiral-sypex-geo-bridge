@@ -22,7 +22,7 @@
     ],
     "require": {
         "php": "^8.0",
-        "sypex/geo": "^0.1"
+        "sypex/geo": "^0.2"
     },
     "require-dev": {
         "nyholm/psr7": "^1.5",
