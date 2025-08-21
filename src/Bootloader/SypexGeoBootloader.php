@@ -12,7 +12,7 @@ use Sypex\GeoInterface;
 
 final class SypexGeoBootloader extends Bootloader
 {
-    public function defineSingletons(): array
+    public function defineBindings(): array
     {
         return [
             Geo::class => static fn(SypexGeoConfig $config) => new Geo($config->getFilepath(), $config->getMode()),
