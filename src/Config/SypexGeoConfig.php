@@ -14,8 +14,8 @@ final class SypexGeoConfig extends InjectableConfig
     protected array $config = [
         'filepath' => 'SxGeo.dat',
         'mode' => Mode::MEMORY,
-        'urlCity' => 'https://sypexgeo.net/files/SxGeoCountry.zip',
-        'urlCountry' => 'https://sypexgeo.net/files/SxGeoCity_utf8.zip',
+        'urlCity' => 'https://sypexgeo.net/files/SxGeoCity_utf8.zip',
+        'urlCountry' => 'https://sypexgeo.net/files/SxGeoCountry.zip',
         'urlInfo' => 'https://sypexgeo.net/files/SxGeo_Info.zip',
     ];
 
