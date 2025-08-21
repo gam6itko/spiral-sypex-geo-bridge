@@ -14,6 +14,9 @@ final class SypexGeoConfig extends InjectableConfig
     protected array $config = [
         'filepath' => 'SxGeo.dat',
         'mode' => Mode::MEMORY,
+        'urlCity' => 'https://sypexgeo.net/files/SxGeoCountry.zip',
+        'urlCountry' => 'https://sypexgeo.net/files/SxGeoCity_utf8.zip',
+        'urlInfo' => 'https://sypexgeo.net/files/SxGeo_Info.zip',
     ];
 
     public function getFilepath(): string
@@ -24,5 +27,20 @@ final class SypexGeoConfig extends InjectableConfig
     public function getMode(): int
     {
         return $this->config['mode'];
+    }
+
+    public function getUrlCity(): string
+    {
+        return $this->config['urlCity'];
+    }
+
+    public function getUrlCountry(): string
+    {
+        return $this->config['urlCountry'];
+    }
+
+    public function getUrlInfo(): string
+    {
+        return $this->config['urlInfo'];
     }
 }
