@@ -10,15 +10,16 @@ use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Sypex\Geo;
 
-class GetCountryIdCommand extends Command
+final class GetCountryIdCommand extends Command
 {
     public const NAME = 'sypex:geo:get-country-id';
+    public const DESCRIPTION = 'Get country ID by IP';
 
     protected const ARGUMENTS = [
         [
             'ip',
             InputArgument::REQUIRED,
-            'IP string',
+            'IP string like x.x.x.x',
         ],
     ];
 
