@@ -27,6 +27,20 @@ final class GetCityCommand extends Command
     {
         $city = $geo->getCityFull($input->getArgument('ip'));
 
+        if (is_array($city)) {
+            foreach ($city as $key => $value) {
+                if (is_array($value)) {
+                    $output->writeln("<info>$key</info>:");
+                    foreach ($value as $k => $v) {
+                        $output->writeln("  $k: $v");
+                    }
+                    continue;
+                }
+                $output->writeln("<info>$key</info>: $value");
+            }
+            return;
+        }
+
         $output->writeln(
             $city
                 ? "City founded: <info>$city</info>"
